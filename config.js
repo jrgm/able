@@ -54,7 +54,9 @@ var config = convict(
 try {
   config.loadFile('./config.json')
 }
-catch (e) {}
+catch (e) {
+  console.log(e)
+}
 
 config.validate()
 
